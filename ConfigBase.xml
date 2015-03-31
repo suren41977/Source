@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+  <Manager>
+    <ImageAcquisition>
+	  <!-- Possible values: "Camera" or "External" -->
+      <param name="Source" value="Camera" />
+	  <!-- Relevant only when Source is External.
+	  Choose false to return immediately after calling emHandleImage. The image might be dropped (when using a camera for example). 
+	  Choose true when calling emHandleImage and deciding to wait until injected image is being processed (when reading from a file for example).-->
+      <param name="SyncExternalSource" value="false" />
+    </ImageAcquisition>
+  </Manager>
+</configuration>
